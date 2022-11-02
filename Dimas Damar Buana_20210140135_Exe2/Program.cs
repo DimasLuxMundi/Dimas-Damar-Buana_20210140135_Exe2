@@ -141,6 +141,7 @@ namespace Dimas_Damar_Buana_20210140135_Exe2
                             Console.WriteLine("................");
                             myApp.input();
                             myApp.SortMerge();
+                            myApp.display();
 
                             break;
                         case 3:
@@ -161,7 +162,7 @@ namespace Dimas_Damar_Buana_20210140135_Exe2
                 Console.WriteLine("\n\nPress return to exit. ");
                 Console.ReadLine();
             } while (pilihan != 3);
-        }
+            
         }
     }
 }
