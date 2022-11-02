@@ -101,9 +101,10 @@ namespace Dimas_Damar_Buana_20210140135_Exe2
 
 
 
+
         static void Main(string[] args)
         {
-            
+            Program myApp = new Program(); 
         }
     }
 }
