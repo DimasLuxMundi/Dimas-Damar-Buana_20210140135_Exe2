@@ -85,7 +85,8 @@ namespace Dimas_Damar_Buana_20210140135_Exe2
                 dimas[high] = temp[high];
                 high--;
             }
-            SortMerge(low, high, (mid + 1));
+            SortMerge(low, mid);
+            SortMerge((mid + 1), high);
             
         }
 
