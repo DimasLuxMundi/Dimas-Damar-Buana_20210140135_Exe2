@@ -56,18 +56,18 @@ namespace Dimas_Damar_Buana_20210140135_Exe2
             }
         }
 
-        
-
-        public void MainMerge(int low, int mid, int high, int[] dimas)
+        public void SortMerge(int low, int high, int mid, int pos)
         {
             int i = low;
             int DB = (mid - 1);
             int k = (high - low + 1);
-            int pos;
+            
             int[] temp = new int[28];
-            
-            
-
+            if (low > high)
+            {
+                mid = (low + high) / 2;
+                
+            }
             while ((low <= DB) && (mid <= high))
             {
                 if (dimas[low] <= dimas[mid])
@@ -85,17 +85,8 @@ namespace Dimas_Damar_Buana_20210140135_Exe2
                 high--;
             }
         }
-        public void SortMerge(int[] dimas,int low, int high)
-        {
-            int mid;
-            if (low > high)
-            {
-                mid = (low + high) / 2;
-                SortMerge(dimas, low, mid);
-                SortMerge(dimas, (mid + 1), high);
-                MainMerge(dimas, low, (mid + 1), high)
-            }
-        }
+
+
 
 
 
