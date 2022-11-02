@@ -56,8 +56,9 @@ namespace Dimas_Damar_Buana_20210140135_Exe2
             }
         }
 
-        public void SortMerge(int low, int high, int mid, int pos)
+        public void SortMerge(int low, int high, int mid)
         {
+            int pos;
             int i = low;
             int DB = (mid - 1);
             int k = (high - low + 1);
@@ -84,6 +85,8 @@ namespace Dimas_Damar_Buana_20210140135_Exe2
                 dimas[high] = temp[high];
                 high--;
             }
+            SortMerge(low, high, (mid + 1));
+            
         }
 
         public void display()
@@ -97,6 +100,7 @@ namespace Dimas_Damar_Buana_20210140135_Exe2
                 Console.WriteLine(dimas[DB]);
             }
         }
+
 
 
 
