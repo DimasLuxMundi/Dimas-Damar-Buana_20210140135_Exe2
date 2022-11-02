@@ -36,6 +36,25 @@ namespace Dimas_Damar_Buana_20210140135_Exe2
             }
 
         }
+
+        public void InsertionSort()
+        {
+            for (int i = 0; i < n; i++)
+            {
+                temp = dimas[i];
+                int pass = 0;
+                for (int DB = i - 1; DB >= 0 && pass != 1;)
+                {
+                    if (temp < dimas[DB])
+                    {
+                        dimas[DB + 1] = dimas[DB];
+                        DB--;
+                        dimas[DB + 1] = temp;
+                    }
+                    else pass = 1;
+                }
+            }
+        }
         
         
 
