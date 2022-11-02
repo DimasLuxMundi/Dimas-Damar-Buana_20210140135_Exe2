@@ -86,7 +86,17 @@ namespace Dimas_Damar_Buana_20210140135_Exe2
             }
         }
 
+        public void display()
+        {
+            Console.WriteLine("\n-----------------------");
+            Console.WriteLine(" Sorted array elements ");
+            Console.WriteLine("-------------------------");
 
+            for (int DB = 0; DB < n; DB++)
+            {
+                Console.WriteLine(dimas[DB]);
+            }
+        }
 
 
 
