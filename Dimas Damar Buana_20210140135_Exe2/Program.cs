@@ -10,7 +10,7 @@ namespace Dimas_Damar_Buana_20210140135_Exe2
     {
         int[] dimas = new int[28];
 
-        int n;
+        int n, temp;
 
         public void input()
         {
@@ -35,12 +35,13 @@ namespace Dimas_Damar_Buana_20210140135_Exe2
                 dimas[i] = Int32.Parse(s1);
             }
 
-
-
         }
+        
+        
 
         static void Main(string[] args)
         {
+            
         }
     }
 }
