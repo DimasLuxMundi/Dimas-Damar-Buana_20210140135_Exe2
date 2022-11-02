@@ -104,7 +104,59 @@ namespace Dimas_Damar_Buana_20210140135_Exe2
 
         static void Main(string[] args)
         {
-            Program myApp = new Program(); 
+            Program myApp = new Program();
+            int pilihan;
+            char ch;
+            do
+            {
+                do
+                {
+                    Console.WriteLine("Menu Option");
+                    Console.WriteLine("=============");
+                    Console.WriteLine("1. Insertion Sort");
+                    Console.WriteLine("2. Merge Sort");
+                    Console.WriteLine("3. Exit");
+                    Console.WriteLine("Enter your choice (1,2,3) : ");
+                    pilihan = Convert.ToInt32(Console.ReadLine());
+                    switch (pilihan)
+                    {
+                        case 1:
+                            Console.WriteLine("");
+                            Console.WriteLine("................");
+                            Console.WriteLine("Insertion Sort");
+                            Console.WriteLine("................");
+                            myApp.input();
+                            myApp.InsertionSort();
+                            myApp.display();
+                            break;
+                        case 2:
+                            Console.WriteLine("");
+                            Console.WriteLine("................");
+                            Console.WriteLine("Merge Sort");
+                            Console.WriteLine("................");
+                            myApp.input();
+                            myApp.SortMerge();
+
+                            break;
+                        case 3:
+                            Console.WriteLine("exit.");
+                            break;
+                        default:
+                            Console.WriteLine("Error");
+                            break;
+                    }
+                    Console.WriteLine("\nPilih menu lagi? (y/n) : ");
+                    ch = char.Parse(Console.ReadLine().ToLower());
+                    Console.Clear();
+
+
+                }
+                while (ch == 'y');
+                //to exit from the console
+                Console.WriteLine("\n\nPress return to exit. ");
+                Console.ReadLine();
+            } while (pilihan != 3);
+        }
         }
     }
 }
